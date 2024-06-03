@@ -14,6 +14,7 @@ const mockImage = mockUrls.map((url, index)=> ({
 export default async function HomePage() {
   const posts = await db.query.posts.findMany()
   console.log(posts)
+  // Adding a fake comment
   return (
     <main className=''>
       <div className='flex flex-wrap gap-4'>
